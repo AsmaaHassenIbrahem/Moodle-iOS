@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09A06D4953AAC1B8552C3528 /* GradesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AC9DF93DED9587D60BF6E2 /* GradesRepository.swift */; };
+		184B3382DFD82EE176B50EA4 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 8D922F201D04ED9782FE86B0 /* Moya */; };
+		1DE7F47D66B7FA959E89E9D1 /* GradesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F38EBBEB6B3FB6BD8D885A /* GradesViewModel.swift */; };
+		2B2C4F4D397707278A2F1432 /* CoursesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22719F60CF3256A0ABA305BB /* CoursesScreen.swift */; };
+		38059A4CA5E3F1E93DDEEC75 /* MoodleCandidateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F377EE19BAFA9DED45E4BC /* MoodleCandidateApp.swift */; };
+		47A3FBC95B4989C0637C4D87 /* ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365AAF12ADA605ECBC6FA4E2 /* ViewState.swift */; };
+		4F93B4F30A0DCB2FBAF469BE /* CourseDetailsDTOs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9685831D5CBDAE14AFDA8197 /* CourseDetailsDTOs.swift */; };
+		5405532819E0EB6CDEDDAE29 /* CourseDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9182D8B93EDB331EBF88DFA /* CourseDetailsViewModel.swift */; };
+		61AA09670CD080A8F0545CF1 /* CourseSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20423B88ADC37A93580C06F4 /* CourseSection.swift */; };
+		6D16D4683C85216EBF8E353C /* CoursesDTOs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D22EAAC1803A7067F4D5E5D /* CoursesDTOs.swift */; };
+		74534E1FEDEAF7C25FCF9A48 /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D987AF16512CBB5822D60697 /* SessionStore.swift */; };
+		7DE23743EB12159991C6F1C1 /* CourseDetailsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AEE7BA4BF6138F615D851A /* CourseDetailsScreen.swift */; };
+		8364ACD157BB9BF8288E1A1C /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E0B2ED51F07202F28BDA8B /* Course.swift */; };
+		9BBFE1C3F702B0094625CE72 /* CoursesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BF7EAFECF64D0B23133F95 /* CoursesViewModel.swift */; };
+		AAD33E79F98593B3072D7552 /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0996929CD7F725B6D77AE9F8 /* AppContainer.swift */; };
+		AD75393E9F7C1FADBA622430 /* MoodleAppNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCE44345F92C329EA9F0EEC /* MoodleAppNavigator.swift */; };
+		B4EFAA212F283BBC7A72389F /* CommonViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8ACB91F19DE1CB4C32F7EC5 /* CommonViews.swift */; };
+		C9F9846A14994D6AD8CC63A7 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = CD69156DCBB28C9FB851A494 /* Swinject */; };
+		D0BD61134A473E3D3EA5B3C0 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F656E20C3380A73D9394FA /* AppConfig.swift */; };
+		D0D9C338C51D8C60B12FBD15 /* CoursesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9460AD10BE75FF3253A863F /* CoursesRepository.swift */; };
+		E40F3F5F163EF153563E0B6C /* AppStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8F943B31C860C48C0BF808 /* AppStrings.swift */; };
+		E912243451A8604AA2CFE33A /* MoodleAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3065C6D13AACC398020582 /* MoodleAPI.swift */; };
+		EF22DA2C57AD52FE21A369D3 /* GradesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15448B1A2E15DEDC7F6E49FD /* GradesScreen.swift */; };
+		EFF17A43218125164FD159F1 /* GradeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9A3CF13FB1BD3BBB0C21E2 /* GradeItem.swift */; };
+		F5B92F4AA4D3B2D54FF7BDBF /* GradesDTOs.swift in Sources */ = {isa = PBXBuildFile; fileRef = C674E166FB39D0967D190EBA /* GradesDTOs.swift */; };
+		F873E6F8A226F01B6E86DC60 /* CourseDetailsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D44F6B696F8FEAD3BD3506 /* CourseDetailsRepository.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0996929CD7F725B6D77AE9F8 /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
+		15448B1A2E15DEDC7F6E49FD /* GradesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradesScreen.swift; sourceTree = "<group>"; };
+		18F656E20C3380A73D9394FA /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		1A3065C6D13AACC398020582 /* MoodleAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodleAPI.swift; sourceTree = "<group>"; };
+		20423B88ADC37A93580C06F4 /* CourseSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseSection.swift; sourceTree = "<group>"; };
+		22719F60CF3256A0ABA305BB /* CoursesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesScreen.swift; sourceTree = "<group>"; };
+		365AAF12ADA605ECBC6FA4E2 /* ViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewState.swift; sourceTree = "<group>"; };
+		51AEE7BA4BF6138F615D851A /* CourseDetailsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailsScreen.swift; sourceTree = "<group>"; };
+		5FCE44345F92C329EA9F0EEC /* MoodleAppNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodleAppNavigator.swift; sourceTree = "<group>"; };
+		6E9A3CF13FB1BD3BBB0C21E2 /* GradeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeItem.swift; sourceTree = "<group>"; };
+		8A8F943B31C860C48C0BF808 /* AppStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStrings.swift; sourceTree = "<group>"; };
+		8D22EAAC1803A7067F4D5E5D /* CoursesDTOs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesDTOs.swift; sourceTree = "<group>"; };
+		9656D910952D8075ADC698F2 /* MoodleCandidate.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = MoodleCandidate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9685831D5CBDAE14AFDA8197 /* CourseDetailsDTOs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailsDTOs.swift; sourceTree = "<group>"; };
+		97D44F6B696F8FEAD3BD3506 /* CourseDetailsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailsRepository.swift; sourceTree = "<group>"; };
+		B2AC9DF93DED9587D60BF6E2 /* GradesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradesRepository.swift; sourceTree = "<group>"; };
+		B2BF7EAFECF64D0B23133F95 /* CoursesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesViewModel.swift; sourceTree = "<group>"; };
+		B8ACB91F19DE1CB4C32F7EC5 /* CommonViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonViews.swift; sourceTree = "<group>"; };
+		B9460AD10BE75FF3253A863F /* CoursesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesRepository.swift; sourceTree = "<group>"; };
+		B9F377EE19BAFA9DED45E4BC /* MoodleCandidateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodleCandidateApp.swift; sourceTree = "<group>"; };
+		C674E166FB39D0967D190EBA /* GradesDTOs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradesDTOs.swift; sourceTree = "<group>"; };
+		C6E0B2ED51F07202F28BDA8B /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		D3F38EBBEB6B3FB6BD8D885A /* GradesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradesViewModel.swift; sourceTree = "<group>"; };
+		D987AF16512CBB5822D60697 /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
+		E9182D8B93EDB331EBF88DFA /* CourseDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailsViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2DC142C2016E08E9BA289ECC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9F9846A14994D6AD8CC63A7 /* Swinject in Frameworks */,
+				184B3382DFD82EE176B50EA4 /* Moya in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B35818225262227CA150128 /* grades */ = {
+			isa = PBXGroup;
+			children = (
+				15448B1A2E15DEDC7F6E49FD /* GradesScreen.swift */,
+				D3F38EBBEB6B3FB6BD8D885A /* GradesViewModel.swift */,
+				68340B643CF7B638C617B35E /* data */,
+				585DD94DB57AAA0482436124 /* model */,
+			);
+			path = grades;
+			sourceTree = "<group>";
+		};
+		240D5E602BA468305D3E88D4 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				9685831D5CBDAE14AFDA8197 /* CourseDetailsDTOs.swift */,
+				97D44F6B696F8FEAD3BD3506 /* CourseDetailsRepository.swift */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		263AE2B0E4D79A13F96EED68 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				8D22EAAC1803A7067F4D5E5D /* CoursesDTOs.swift */,
+				B9460AD10BE75FF3253A863F /* CoursesRepository.swift */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		45616307AC92414B6A6D845A /* di */ = {
+			isa = PBXGroup;
+			children = (
+				0996929CD7F725B6D77AE9F8 /* AppContainer.swift */,
+			);
+			path = di;
+			sourceTree = "<group>";
+		};
+		4D29227B4D0C15D6CAF0CE00 /* MoodleCandidate */ = {
+			isa = PBXGroup;
+			children = (
+				B9F377EE19BAFA9DED45E4BC /* MoodleCandidateApp.swift */,
+				B44E0F7674B6BD4503FE0A1E /* appNavigation */,
+				45616307AC92414B6A6D845A /* di */,
+				FBD6B1BDB2783999543631E7 /* feature */,
+				C8385FD18AAA08566BBF3189 /* shared */,
+			);
+			path = MoodleCandidate;
+			sourceTree = "<group>";
+		};
+		51BB970151107A3B56F2F435 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				B8ACB91F19DE1CB4C32F7EC5 /* CommonViews.swift */,
+				365AAF12ADA605ECBC6FA4E2 /* ViewState.swift */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		5591CD1DDBB5EDE929A560A3 /* constants */ = {
+			isa = PBXGroup;
+			children = (
+				8A8F943B31C860C48C0BF808 /* AppStrings.swift */,
+			);
+			path = constants;
+			sourceTree = "<group>";
+		};
+		56DC4C98823257D42E751767 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				20423B88ADC37A93580C06F4 /* CourseSection.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		585DD94DB57AAA0482436124 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				6E9A3CF13FB1BD3BBB0C21E2 /* GradeItem.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		62C60F15682C14DDDB2E402A /* courseDetails */ = {
+			isa = PBXGroup;
+			children = (
+				51AEE7BA4BF6138F615D851A /* CourseDetailsScreen.swift */,
+				E9182D8B93EDB331EBF88DFA /* CourseDetailsViewModel.swift */,
+				240D5E602BA468305D3E88D4 /* data */,
+				56DC4C98823257D42E751767 /* model */,
+			);
+			path = courseDetails;
+			sourceTree = "<group>";
+		};
+		64ED9391D2EF83B9A3FE511C /* network */ = {
+			isa = PBXGroup;
+			children = (
+				1A3065C6D13AACC398020582 /* MoodleAPI.swift */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
+		68340B643CF7B638C617B35E /* data */ = {
+			isa = PBXGroup;
+			children = (
+				C674E166FB39D0967D190EBA /* GradesDTOs.swift */,
+				B2AC9DF93DED9587D60BF6E2 /* GradesRepository.swift */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		A3CC7F4924A61E74ED294780 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				C6E0B2ED51F07202F28BDA8B /* Course.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		B13E7A74E5B878FFB21CBAEE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9656D910952D8075ADC698F2 /* MoodleCandidate.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B44E0F7674B6BD4503FE0A1E /* appNavigation */ = {
+			isa = PBXGroup;
+			children = (
+				5FCE44345F92C329EA9F0EEC /* MoodleAppNavigator.swift */,
+			);
+			path = appNavigation;
+			sourceTree = "<group>";
+		};
+		B8554B5F9C141F9A60034904 /* config */ = {
+			isa = PBXGroup;
+			children = (
+				18F656E20C3380A73D9394FA /* AppConfig.swift */,
+			);
+			path = config;
+			sourceTree = "<group>";
+		};
+		C15563BB6649488F0DFF7477 = {
+			isa = PBXGroup;
+			children = (
+				4D29227B4D0C15D6CAF0CE00 /* MoodleCandidate */,
+				B13E7A74E5B878FFB21CBAEE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C3B5F6EC037CD5A440293640 /* courses */ = {
+			isa = PBXGroup;
+			children = (
+				22719F60CF3256A0ABA305BB /* CoursesScreen.swift */,
+				B2BF7EAFECF64D0B23133F95 /* CoursesViewModel.swift */,
+				263AE2B0E4D79A13F96EED68 /* data */,
+				A3CC7F4924A61E74ED294780 /* model */,
+			);
+			path = courses;
+			sourceTree = "<group>";
+		};
+		C6EEC0B2FCD4C0C625748D55 /* session */ = {
+			isa = PBXGroup;
+			children = (
+				D987AF16512CBB5822D60697 /* SessionStore.swift */,
+			);
+			path = session;
+			sourceTree = "<group>";
+		};
+		C8385FD18AAA08566BBF3189 /* shared */ = {
+			isa = PBXGroup;
+			children = (
+				B8554B5F9C141F9A60034904 /* config */,
+				5591CD1DDBB5EDE929A560A3 /* constants */,
+				64ED9391D2EF83B9A3FE511C /* network */,
+				C6EEC0B2FCD4C0C625748D55 /* session */,
+				51BB970151107A3B56F2F435 /* ui */,
+			);
+			path = shared;
+			sourceTree = "<group>";
+		};
+		FBD6B1BDB2783999543631E7 /* feature */ = {
+			isa = PBXGroup;
+			children = (
+				62C60F15682C14DDDB2E402A /* courseDetails */,
+				C3B5F6EC037CD5A440293640 /* courses */,
+				0B35818225262227CA150128 /* grades */,
+			);
+			path = feature;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		14B1E98764CBE429D158DAF7 /* MoodleCandidate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 616BF2E2D60755196E151DB6 /* Build configuration list for PBXNativeTarget "MoodleCandidate" */;
+			buildPhases = (
+				D96B452217086729CFDD5FC1 /* Sources */,
+				2DC142C2016E08E9BA289ECC /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MoodleCandidate;
+			packageProductDependencies = (
+				CD69156DCBB28C9FB851A494 /* Swinject */,
+				8D922F201D04ED9782FE86B0 /* Moya */,
+			);
+			productName = MoodleCandidate;
+			productReference = 9656D910952D8075ADC698F2 /* MoodleCandidate.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D7D09FD32512650917CA543F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					14B1E98764CBE429D158DAF7 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C21A2E75D67255CCA84074CA /* Build configuration list for PBXProject "MoodleCandidate" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = C15563BB6649488F0DFF7477;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				0F6B64B34EC1C822E234C267 /* XCRemoteSwiftPackageReference "Moya" */,
+				3F80DF60669B6E8ED73490A2 /* XCRemoteSwiftPackageReference "Swinject" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = B13E7A74E5B878FFB21CBAEE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				14B1E98764CBE429D158DAF7 /* MoodleCandidate */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D96B452217086729CFDD5FC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0BD61134A473E3D3EA5B3C0 /* AppConfig.swift in Sources */,
+				AAD33E79F98593B3072D7552 /* AppContainer.swift in Sources */,
+				E40F3F5F163EF153563E0B6C /* AppStrings.swift in Sources */,
+				B4EFAA212F283BBC7A72389F /* CommonViews.swift in Sources */,
+				8364ACD157BB9BF8288E1A1C /* Course.swift in Sources */,
+				4F93B4F30A0DCB2FBAF469BE /* CourseDetailsDTOs.swift in Sources */,
+				F873E6F8A226F01B6E86DC60 /* CourseDetailsRepository.swift in Sources */,
+				7DE23743EB12159991C6F1C1 /* CourseDetailsScreen.swift in Sources */,
+				5405532819E0EB6CDEDDAE29 /* CourseDetailsViewModel.swift in Sources */,
+				61AA09670CD080A8F0545CF1 /* CourseSection.swift in Sources */,
+				6D16D4683C85216EBF8E353C /* CoursesDTOs.swift in Sources */,
+				D0D9C338C51D8C60B12FBD15 /* CoursesRepository.swift in Sources */,
+				2B2C4F4D397707278A2F1432 /* CoursesScreen.swift in Sources */,
+				9BBFE1C3F702B0094625CE72 /* CoursesViewModel.swift in Sources */,
+				EFF17A43218125164FD159F1 /* GradeItem.swift in Sources */,
+				F5B92F4AA4D3B2D54FF7BDBF /* GradesDTOs.swift in Sources */,
+				09A06D4953AAC1B8552C3528 /* GradesRepository.swift in Sources */,
+				EF22DA2C57AD52FE21A369D3 /* GradesScreen.swift in Sources */,
+				1DE7F47D66B7FA959E89E9D1 /* GradesViewModel.swift in Sources */,
+				E912243451A8604AA2CFE33A /* MoodleAPI.swift in Sources */,
+				AD75393E9F7C1FADBA622430 /* MoodleAppNavigator.swift in Sources */,
+				38059A4CA5E3F1E93DDEEC75 /* MoodleCandidateApp.swift in Sources */,
+				74534E1FEDEAF7C25FCF9A48 /* SessionStore.swift in Sources */,
+				47A3FBC95B4989C0637C4D87 /* ViewState.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1C09BF368467365590BAFA28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = io.qzz.moodlecandidate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.1;
+			};
+			name = Debug;
+		};
+		6C65BD2536F1BBA60D1C4BFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGNING_ALLOWED[sdk=iphonesimulator*]" = NO;
+				"CODE_SIGNING_REQUIRED[sdk=iphonesimulator*]" = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_NAME = MoodleCandidate;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B6C13FE0FDF6B71EF6FF875F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = io.qzz.moodlecandidate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.1;
+			};
+			name = Release;
+		};
+		DCBE76B56ACD385337DB820D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGNING_ALLOWED[sdk=iphonesimulator*]" = NO;
+				"CODE_SIGNING_REQUIRED[sdk=iphonesimulator*]" = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_NAME = MoodleCandidate;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		616BF2E2D60755196E151DB6 /* Build configuration list for PBXNativeTarget "MoodleCandidate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCBE76B56ACD385337DB820D /* Debug */,
+				6C65BD2536F1BBA60D1C4BFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C21A2E75D67255CCA84074CA /* Build configuration list for PBXProject "MoodleCandidate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C09BF368467365590BAFA28 /* Debug */,
+				B6C13FE0FDF6B71EF6FF875F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0F6B64B34EC1C822E234C267 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.0;
+			};
+		};
+		3F80DF60669B6E8ED73490A2 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8D922F201D04ED9782FE86B0 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0F6B64B34EC1C822E234C267 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		CD69156DCBB28C9FB851A494 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3F80DF60669B6E8ED73490A2 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = D7D09FD32512650917CA543F /* Project object */;
+}
