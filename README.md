@@ -151,10 +151,3 @@ Both apps use the same high-level approach:
 - HTML-rich content is normalized before display where needed
 - The apps are intentionally scoped to the assignment requirements and keep the UI clean and simple
 
-## Submission Checklist
-
-1. Run Android from Android Studio
-2. Run iOS from Xcode
-3. Verify the Moodle API responses using the provided credentials or token
-4. Capture screenshots if required
-5. Push the repository to GitHub
